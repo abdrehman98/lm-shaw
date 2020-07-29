@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 
 let data ={
-    message = "Default"
+    message : "Default"
 }
 var newMessage = false
 
