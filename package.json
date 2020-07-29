@@ -1,0 +1,11 @@
+{
+  "name": "shaw",
+  "version": "1.0.0",
+  "description": "This is a backend http server for HiFive Boards to communicate with eachother",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "Abdul Rehman (houneie@gmail.com)",
+  "license": "ISC"
+}
