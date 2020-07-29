@@ -2,7 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-var message = "Default"
+let data ={
+    message = "Default"
+}
 var newMessage = false
 
 //Root Page
@@ -10,18 +12,17 @@ app.get('/', (req, res) => res.send('<h>This is a backend Server for Sending Hel
 
 //Setter
 app.get('/set', (req, res) => {
-    message = req.query,message
+    data.message = req.query.message
     newMessage = true
     res.send("Sent")
 });
 
 //getter
 app.get('/get', (req, res) => {
+    res.send(data.message)
     if(newMessage){
-        res.send(message)
         newMessage = false
-    } else{
-        res.send("No New Message")
+        data.message = "Default"
     }
 });
 
