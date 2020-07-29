@@ -19,7 +19,7 @@ app.get('/set', (req, res) => {
 
 //getter
 app.get('/get', (req, res) => {
-    res.send(data.message)
+    res.send(data)
     if(newMessage){
         newMessage = false
         data.message = "Default"
